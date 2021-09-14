@@ -1,0 +1,15 @@
+<h1><%= camp.title %></h1>
+
+<p><strong>Description</strong>: <%= camp.description %></p>
+<p><strong>Price</strong>: <%= camp.price %></p>
+<p><strong>Location</strong>: <%= camp.location %></p>
+
+<form action="/camps" method="get">
+  <button type="submit">All Camps</button>
+</form>
+<form action="/camps/<%= camp._id %>/edit" method="get">
+  <button type="submit">Edit</button>
+</form>
+<form action="/camps/<%= camp._id %>?_method=DELETE" method="post">
+  <button type="submit">Delete</button>
+</form>

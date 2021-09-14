@@ -1,0 +1,11 @@
+<h1>All Camps</h1>
+
+<ul>
+  <% for( const camp of camps ) { %>
+  <li>
+    <a href="/camps/<%= camp._id %>"><%= camp.title %></a>
+  </li>
+  <% } %>
+</ul>
+
+<a href="/camps/create">Add Camp</a>
